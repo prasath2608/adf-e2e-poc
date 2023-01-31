@@ -1,0 +1,9 @@
+{
+	"name": "adf-prasath-dev-datafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "5cb12f1f-81f4-40f9-a3b3-1de901113583",
+		"tenantId": "c5273aee-0db0-4e7b-a03d-fc55f317124e"
+	}
+}
