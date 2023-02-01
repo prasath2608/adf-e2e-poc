@@ -1,0 +1,86 @@
+{
+	"name": "DS_input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "orders_2019-02-11.parquet",
+				"folderPath": "orders",
+				"container": "wwifullload"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "OrderID",
+				"type": "INT32"
+			},
+			{
+				"name": "CustomerID",
+				"type": "INT32"
+			},
+			{
+				"name": "SalespersonPersonID",
+				"type": "INT32"
+			},
+			{
+				"name": "PickedByPersonID",
+				"type": "INT32"
+			},
+			{
+				"name": "ContactPersonID",
+				"type": "INT32"
+			},
+			{
+				"name": "BackorderOrderID",
+				"type": "INT32"
+			},
+			{
+				"name": "OrderDate",
+				"type": "INT96"
+			},
+			{
+				"name": "ExpectedDeliveryDate",
+				"type": "INT96"
+			},
+			{
+				"name": "CustomerPurchaseOrderNumber",
+				"type": "UTF8"
+			},
+			{
+				"name": "IsUndersupplyBackordered",
+				"type": "BOOLEAN"
+			},
+			{
+				"name": "Comments",
+				"type": "UTF8"
+			},
+			{
+				"name": "DeliveryInstructions",
+				"type": "UTF8"
+			},
+			{
+				"name": "InternalComments",
+				"type": "UTF8"
+			},
+			{
+				"name": "PickingCompletedWhen",
+				"type": "INT96"
+			},
+			{
+				"name": "LastEditedBy",
+				"type": "INT32"
+			},
+			{
+				"name": "LastEditedWhen",
+				"type": "INT96"
+			}
+		]
+	}
+}
